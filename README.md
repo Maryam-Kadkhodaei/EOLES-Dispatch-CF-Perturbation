@@ -1,3 +1,18 @@
+
+# EOLES for CF perturbation study
+
+This code is an adaptation of the EOLES model for sensitivity to CF perturbation studies. 
+In this version of the model, simulation is performed for 9 years. To increase the computation speed, the  time resolution decreases to two hours. 
+Ancillary services, hydrogene storage and one of the gas turbines are removed in order to ensure the correspondence between the capacity and dispatch optimisation and dispatch optimization. 
+
+The EOLES model orginally developed by the Behrang Shirizadeh in GAMS.
+You can find it here: https://github.com/BehrangShirizadeh/EOLES_elec_pro_
+
+This model later translated to python by Nilam De Oliveira Gill
+You can find it here: https://gitlab.in2p3.fr/nilam.de_oliveira-gill/eoles
+
+
+
 # Eoles
 
 Eoles model performs optimization of the investment and operation of the energy system in order to minimize the total cost while satisfying energy demand. \
@@ -109,7 +124,7 @@ You can find more information about input data in the file __inputs.txt__.
 ---
 
 The program outputs 4 files:  \
-**Summary**: This is a small summary of the program, it contains the final objective (the cost) but also other information such as the load curtailment or the storage losses. \
+**Cost**: This is a small summary of the program, it contains the final objective (the cost) but also other information such as the load curtailment or the storage losses. \
 **Hourly Generation**: Contains the hourly generation for each technology as well as other information hour by hour. \
 **Elec_Balance**: Contains the electrical balance. That is the generation and the consumption of the model's results. \
 **Capacities**: Contains the energy and power capacities for each technology in the model. \
@@ -118,9 +133,4 @@ Select column A > Go to the menu: Data > Convert > Select Delimited > Next > Che
 
 ---
 
-### Other
 
----
-
-If you have any question about the program or the installation you can ask it through an email to : \
-_nilam.deoliveiragill@gmail.com_
